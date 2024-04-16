@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 20000; //Dollar
 let myPin = 1234;
@@ -32,6 +33,7 @@ if (pinAnswer.p1 === myPin) {
             console.log("your current balance is:" + myBalance);
         }
     }
+    //add fast cash option
     else if (operatorAns.operator === "fast cash") {
         let fast = await inquirer.prompt([
             {
